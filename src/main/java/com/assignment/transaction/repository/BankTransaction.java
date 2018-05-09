@@ -1,17 +1,11 @@
 package com.assignment.transaction.repository;
 
-import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 /**
  * Bean holding data about single transaction.
  */
-@Entity
-@Table(name = "bank_transaction")
 public class BankTransaction {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
